@@ -57,3 +57,15 @@ The customer experience starts to sore in this phase, for e.g. he/she gets a com
 In this phase, the customer is said to have churned. We define churn based on this phase. Also, it is important to note that at the time of prediction (i.e. the action months), this data is not available to us for prediction. Thus, after tagging churn as 1/0 based on this phase, we discard all data corresponding to this phase.
 
 In this case, since we are working over a four-month window, the first two months are the ‘good’ phase, the third month is the ‘action’ phase, while the fourth month is the ‘churn’ phase.
+
+
+## Linear Regression 
+We have decided to create a Logistic Regression model to solve the problem. The Logistic Regression model will be expected to output a Churn Probability for every data under test.
+
+The input data is spread over 3 separate files - churn_data.csv, cust_data.csv and internet_data.csv.
+
+The Data includes the following:
+
+Personal Data (gender, children, whether senior citizen, dependents...)
+Services Related (Tenure with the provider, payment method, internet packs purchased, special offers...)
+Charges being incurred (Amount of recharge done per month...)
